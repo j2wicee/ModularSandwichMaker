@@ -9,6 +9,7 @@ recipes = data.recipes
 sandwich_maker_instance = sandwich_maker.SandwichMaker(resources)
 cashier_instance = cashier.Cashier()
 
+
 def main():
     # Terminal Loop
     while True:
@@ -28,5 +29,6 @@ def main():
         else:
             print(f"Sorry, {choice} is not a valid choice. Please try again.")
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     main()

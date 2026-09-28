@@ -1,7 +1,8 @@
 class Cashier:
     def __init__(self):
         pass
-    def ask_input(self,prompt):
+
+    def ask_input(self, prompt):
         """Keep asking for the coins until user enters a whole number that isn't negative, avoiding crashes"""
         while True:
             res = input(prompt)
@@ -14,7 +15,6 @@ class Cashier:
                 print("You cannot enter a negative number of coins.")
                 continue
             return count
-
 
     def process_coins(self):
         """Returns the total calculated from coins inserted.
